@@ -1,0 +1,39 @@
+
+/* Selector uniersal */
+/** {
+	color:red;
+}*/
+
+/* Selectores hermanos */
+h1 + p {
+	color:red;
+}
+
+h1 ~ p {
+	/*color:pink;*/
+}
+
+h2 + div p {
+	color:green;
+}
+
+[class] {
+	color:#444;
+}
+
+[target="_blank"] {
+	font-style:italic;
+}
+
+
+/* Selectores de comodin 
+
+	$  ->  termina con
+	^  ->  comienza con
+	*  ->  contiene a
+
+	Ejemplo:
+		[src$="jpg"]  -> Busca los src que terminen con jpg.
+		[href^="http://"]  -> Los que comiencen. 
+		[src*="icon"] -> Todos los que contengan icon.
+*/

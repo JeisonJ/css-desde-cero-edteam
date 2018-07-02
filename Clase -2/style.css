@@ -1,0 +1,39 @@
+
+p {
+	color:purple;
+}
+
+a {
+	color:inherit;
+}
+
+li {
+	color:red;
+}
+
+
+/* ESPECIFICIDAD */
+
+.parrafo {
+	/* Especificidad -> 10 */
+	color:green;
+}
+
+p#parrafo {
+	/* Especificidad -> 101 */
+	color:brown; /* Suma especificadad + important */
+}
+
+#parrafo {
+	/* Especificidad -> 100 */
+	color:blue;
+}
+
+p {
+	/* Especificidad -> 1 */
+	color:purple;
+}
+
+.parrafo#parrafo {
+	color:pink;
+}

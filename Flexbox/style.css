@@ -1,0 +1,51 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding-bottom: 20em;
+}
+
+pre {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	font-size:1.1em;
+	padding: 1em .5em;
+	color:teal;
+
+}
+/* Las clases que empiecen con container. */
+[class^="container"] {
+	display:flex;
+	border:1px solid black;
+}
+
+.container-demo {
+	flex-direction: row-reverse;
+}
+
+.item-demo {
+	background-color: #40C2FE;
+	width: 100px;
+	height: 100px;
+}
+
+.item-demo:nth-child(even) {
+	background-color: #F92473;
+}
+
+.container-demo2 {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container-demo3 {
+	height: 300px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.container-demo3 .item-demo{
+	
+}

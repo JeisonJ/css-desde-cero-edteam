@@ -1,0 +1,48 @@
+
+/* Tipos de selectores que se activan 
+   en determinadas circustancias.
+
+   Se les llaman pseudoclases
+
+   Por ejemplo:
+   	:hover, :visited, ::selection(Este trabaja con dos puntos)
+
+ 	:hover   -> Cuando pasas el cursor sobre un elemento.
+ 	:active  -> Cuando se hace clic.
+ 	:visited -> Cuando un enlace ha visitado.
+ 	:focus   -> Un campo de formulario es seleccionado.
+ 	:empty   -> Selecciona elementos vacios.
+ 	:not()   -> Recibe un parametro(selector) a excluir.
+ 	::selection -> Para cambiar el color de la seleccion.
+ 	:target  -> Selecciona el destino de un enlace interno.
+ 
+ */
+
+/* Se aplica a todos*/
+ :hover {
+	color:red;
+ }
+
+/* A uno en especifico
+ p:hover {
+ 	color:green;
+ }
+
+/* Se aplica a los hijos */
+ p :hover{
+ 	color:blue;
+ }
+
+ h1::selection {
+ 	color:purple;
+ 	background: blue;
+ }
+
+ #sorpresa {
+ 	display:none;
+ }
+
+ #sorpresa:target {
+ 	display:block;
+ 	background: #444;
+ }

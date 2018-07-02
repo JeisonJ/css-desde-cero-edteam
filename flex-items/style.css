@@ -1,0 +1,23 @@
+
+body {
+	padding-bottom: 20em;
+}
+
+.item {
+	width: 80px;
+	height: 80px;
+	background-color: #E52F76;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Items pares. */
+.item:nth-child(even) {
+	background-color: #60D547;
+}
+
+.container {
+	border: 1px solid black;
+	display: flex;
+}

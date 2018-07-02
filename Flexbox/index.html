@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <title>Uso del sexy Flebox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<h1>Uso del sexy Flebox</h1>
+	<p>Modelo de layout que requiere la relacion de un contenedor (llamados flex-items). De esa manera, el flex-container define un contexto respecto al cual los flex-items van a organizarse y calcular sus dimensiones.</p>
+
+	<pre>
+	.flex-container
+	  .flex-item
+	  .flex-item
+	  .flex-item
+	    .flex-item--child
+	</pre>
+
+	<p>En el ejemplo anterior, <code>flex-item--child</code> no se considera un flex-item porque estos deben ser solo hijos directos de un flex-container.</p>
+
+	<p>Un flex-item podria ser a su vez un flex-container. Se define un flex-container con la propiedad sigueiente:</p>
+
+	<pre>
+	display: flex;
+	</pre>
+
+	<p>Ejemplo item y container a la vez:</p>
+
+	<pre>
+	.container {
+	  display: flex;
+	}
+
+	.container > .item {
+	  display: flex;
+	}
+	</pre>
+	
+	<h2>Ejes en Flexbox</h2>
+	<div class="container-demo">
+		<div class="item-demo">1</div>
+		<div class="item-demo">2</div>
+		<div class="item-demo">3</div>
+		<div class="item-demo">4</div>
+	</div>
+
+	<pre>
+	.container-demo {
+	  display:flex;
+	  flex-direction: row-reverse;
+	}
+	</pre>
+
+	<h2>Alinear elementos respecto al main-axis</h2>
+	<div class="container-demo2">
+		<div class="item-demo">1</div>
+		<div class="item-demo">2</div>
+		<div class="item-demo">3</div>
+		<div class="item-demo">4</div>
+	</div>
+
+	<h2>Alinear elementos respecto al cross-axis</h2>
+	<div class="container-demo3">
+		<div class="item-demo">1</div>
+		<div class="item-demo">2</div>
+		<div class="item-demo">3</div>
+		<div class="item-demo">4</div>
+		<div class="item-demo">5</div>
+		<div class="item-demo">6</div>
+	</div>
+  </body>
+</html>
